@@ -45,9 +45,9 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener{
 	private int lengthofsnake = 3; 
 	
 	// position for the "enemy"
-	private int [] enemyxpos = { 25,50,75,100,125,150,175,200,225,250,275,300,325,350,
+	private int [] enemyxpos = { 75,100,125,150,175,200,225,250,275,300,325,350,
 375,400,425,450,475,500,525,550,575,600,625,650,675,700,725,750,775,800,825,850};					
-	private int [] enemyypos = { 25,50,75,100,125,150,175,200,225,250,275,300,325,350,
+	private int [] enemyypos = { 75,100,125,150,175,200,225,250,275,300,325,350,
 375,400,425,450,475,500,525,550,575,600,625};	
 	
 	
@@ -57,8 +57,8 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener{
 	
 		
 		//create a random variable for the enemy
-		private int xpos = random.nextInt(34);
-		private int ypos = random.nextInt(23);
+		private int xpos = random.nextInt(32);
+		private int ypos = random.nextInt(21);
 		
 		//initial movement 
 		private int moves = 0;
@@ -153,8 +153,8 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener{
 			
 			score++; 
 			lengthofsnake++;
-			xpos = random.nextInt(34);
-			ypos = random.nextInt(23); 
+			xpos = random.nextInt(32);
+			ypos = random.nextInt(21); 
 		}
 		
 		enemy.paintIcon(this, g, enemyxpos[xpos], enemyypos[ypos]);
